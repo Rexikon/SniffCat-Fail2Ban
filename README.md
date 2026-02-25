@@ -40,7 +40,7 @@ The `sniffcat` action works **alongside** your existing ban actions — IPs are 
 ## Quick Start
 
 ```bash
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
 ```
 
 The installer will interactively ask for your SniffCat API token and handle everything else.
@@ -52,13 +52,13 @@ The installer will interactively ask for your SniffCat API token and handle ever
 Using **curl**:
 
 ```bash
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
 ```
 
 Using **wget**:
 
 ```bash
-sudo bash <(wget -qO- https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
 ```
 
 The installer will:
@@ -126,7 +126,7 @@ action = %(action_)s
 Then restart fail2ban:
 
 ```bash
-sudo systemctl restart fail2ban
+systemctl restart fail2ban
 ```
 
 ### Verify it works
@@ -134,7 +134,7 @@ sudo systemctl restart fail2ban
 Check that the action is loaded:
 
 ```bash
-sudo fail2ban-client get sshd actions
+fail2ban-client get sshd actions
 ```
 
 You should see `sniffcat` listed among the actions.
@@ -177,7 +177,7 @@ Only errors are logged to `/var/log/sniffcat.log` — successful reports are sil
 Using the uninstaller:
 
 ```bash
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/uninstall.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/uninstall.sh)
 ```
 
 Or manually:
@@ -186,7 +186,7 @@ Or manually:
 rm -rf /opt/sniffcat
 rm -f /etc/fail2ban/action.d/sniffcat.conf
 rm -f /var/log/sniffcat.log
-sudo systemctl restart fail2ban
+systemctl restart fail2ban
 ```
 
 > **Note:** Remember to remove the `sniffcat` action from your jails in `/etc/fail2ban/jail.local` after uninstalling.
