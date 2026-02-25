@@ -1,9 +1,9 @@
 #!/bin/bash
 # SniffCat fail2ban Integration - Installer
-# https://github.com/Rexikon/SniffCat-Fail2Ban
+# https://github.com/Rexikon/SniffCat-fail2ban
 #
 # Usage:
-#   bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-Fail2Ban/main/install.sh)
+#   bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/install.sh)
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -15,7 +15,7 @@ CONFIG_FILE="${INSTALL_DIR}/sniffcat.conf"
 SCRIPT_NAME="fail2ban.sh"
 ACTION_NAME="sniffcat-action.conf"
 ACTION_DEST="/etc/fail2ban/action.d/sniffcat.conf"
-REPO_URL="https://raw.githubusercontent.com/Rexikon/SniffCat-Fail2Ban/main"
+REPO_URL="https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main"
 LOG_FILE="/var/log/sniffcat.log"
 
 # --- Colors ---

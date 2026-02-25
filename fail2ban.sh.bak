@@ -2,7 +2,7 @@
 # SniffCat fail2ban Integration
 # Reports banned IPs from fail2ban to the SniffCat API
 #
-# https://github.com/Rexikon/SniffCat-Fail2Ban
+# https://github.com/Rexikon/SniffCat-fail2ban
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 set -euo pipefail

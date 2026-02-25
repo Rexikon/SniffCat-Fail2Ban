@@ -1,9 +1,9 @@
 #!/bin/bash
 # SniffCat fail2ban Integration - Uninstaller
-# https://github.com/Rexikon/SniffCat-Fail2Ban
+# https://github.com/Rexikon/SniffCat-fail2ban
 #
 # Usage:
-#   bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-Fail2Ban/main/uninstall.sh)
+#   bash <(curl -fsSL https://raw.githubusercontent.com/Rexikon/SniffCat-fail2ban/main/uninstall.sh)
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
